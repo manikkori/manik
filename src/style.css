@@ -1024,7 +1024,7 @@ noscript {
     align-items: flex-start;
     justify-content: center;
     position: relative
-    transition: filter 0.5s ease, transform 0.5s ease;
+    transition: filter 1s ease, transform 1s ease;
 }
 
 .dp::before {
@@ -1036,7 +1036,7 @@ noscript {
 }
 
 .dp:hover{
-    filter: grayscale(70%);
+    filter: grayscale(80%);
 }
 .dp:hover::after {
     transform: translate(20px, 20px);
