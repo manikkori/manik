@@ -953,13 +953,12 @@ noscript {
     justify-content: center;
     flex-direction: column;
     padding-top: 200px
-    
 }
 
 .about-section,
 .projects-section-div,
 .skills-section {
-    
+
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -1023,8 +1022,8 @@ noscript {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    position: relative
-    transition: filter 1s ease, transform 1s ease;
+    position: relative;
+    transition: filter 0.5s ease, transform 0.5s ease;
 }
 
 .dp::before {
@@ -1035,12 +1034,13 @@ noscript {
     box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff
 }
 
-.dp:hover{
-    filter: grayscale(80%);
+.dp:hover {
+filter: grayscale(70%);
 }
+
 .dp:hover::after {
     transform: translate(20px, 20px);
-    
+
 }
 
 .dp:hover::before {
@@ -1904,7 +1904,7 @@ footer {
 
     .landing-page-container {
         margin-top: 70px;
-        height: 300px
+        height: 350px
     }
 
     .text-content {
@@ -1958,9 +1958,11 @@ footer {
     .two-words article {
         font-size: 2.2rem
     }
-    .contact-btn-div{
+
+    .contact-btn-div {
         margin-top: -50px;
     }
+    
 }
 
 @media screen and (max-width:375px) {
@@ -2019,63 +2021,69 @@ footer {
     .logos {
         gap: 20px
     }
+    .footerimg{
+        width: 200px;
+    }
 }
 
 
-@media only screen and (max-width: 1300px) and (max-height: 730px){
+@media only screen and (max-width: 1300px) and (max-height: 730px) {
     .landing-page-container {
         height: fit-content;
-        margin-top: 100px;  
+        margin-top: 100px;
     }
 }
 
 .education {
-  text-align: center;
-  justify-content: center;
-  row-gap: 2rem;
-  display: block;
-  grid-template-columns: repeat(1, 1fr);
-  position: relative;
-  /* background-image: url('https://wallpapercave.com/wp/wp3439739.jpg'); */
-  /* tumhari image */
-  background-size: cover;
-  /* image poora section cover kare */
-  background-position: center;
-  /* image center me rahe */
-  background-repeat: no-repeat;
-  /* repeat na ho */
+    text-align: center;
+    justify-content: center;
+    row-gap: 2rem;
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    /* background-image: url('https://wallpapercave.com/wp/wp3439739.jpg'); */
+    /* tumhari image */
+    background-size: cover;
+    /* image poora section cover kare */
+    background-position: center;
+    /* image center me rahe */
+    background-repeat: no-repeat;
+    /* repeat na ho */
 
 
 }
-.edu{
+
+.edu {
     margin: auto;
     width: 100%;
     margin-top: 50px;
 }
-.edu-containter{
+
+.edu-containter {
     margin-top: 40px;
     width: 100%;
 }
+
 .education__data {
     margin-top: 20px;
 
-  text-align: center;
-  align-items: center;
-  position: relative;
-  line-height: 35px;
-  justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    line-height: 35px;
+    justify-content: center;
 
-  /* height: 10px; */
-  padding: 0.5rem 1rem;
-  padding: 20px;
+    /* height: 10px; */
+    padding: 0.5rem 1rem;
+    padding: 20px;
 
-  color: white;
+    color: white;
     font-size: 1.4rem;
-  border-radius: 2rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  border: 1px solid var(--tech-stack-box-border-color);
-  background-color:  var(--tech-stack-box-first-color);
-  
+    border-radius: 2rem;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border: 1px solid var(--tech-stack-box-border-color);
+    background-color: var(--tech-stack-box-first-color);
+
 }
 
 @media screen and (max-width:768px) {
@@ -2085,5 +2093,32 @@ footer {
         line-height: 25px;
         padding: 1rem 1rem;
     }
-    
+
 }
+
+/* body {
+    zoom: 90%;
+} */
+
+.mobile-img,
+    .desktop-img {
+      display: none;
+    }
+
+    /* mobile view (max 768px tak) */
+    @media (max-width: 768px) {
+      .mobile-img {
+        display: block;
+        width: 230px;
+      }
+    }
+
+    /* laptop/desktop view (768px se upar) */
+    @media (min-width: 769px) {
+      .desktop-img {
+        display: block;
+        width: 600px;
+        margin-top: -50px;
+        margin-bottom: -20px;
+      }
+    }
