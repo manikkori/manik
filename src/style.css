@@ -1027,15 +1027,22 @@ noscript {
 }
 
 .dp::before {
+    border-radius: 10px;
+
     box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent
 }
 
 .dp::after {
+    border-radius: 10px;
+
     box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff
 }
 
 .dp:hover {
-filter: grayscale(70%);
+filter: grayscale(1%);
+}
+.dp img {
+    border-radius: 10px;
 }
 
 .dp:hover::after {
@@ -2117,8 +2124,8 @@ footer {
     @media (min-width: 769px) {
       .desktop-img {
         display: block;
-        width: 600px;
-        margin-top: -50px;
-        margin-bottom: -20px;
+        width: 750px;
+        margin-top: -20px;
+        margin-bottom: -45px;
       }
     }
